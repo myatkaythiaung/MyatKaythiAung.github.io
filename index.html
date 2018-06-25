@@ -16,17 +16,17 @@
                     </script> 
                 <!-- end of service worker -->
         <!-- start of web manifest -->
-        <link rel="manifest" href="/manifest.json">
+	<link rel="manifest" href="{{url_for('static',filename='/manifest.json')}}">
          <!-- end of web manifest -->
            <!-- theme-color -->
         <meta name="theme-color" content="#fff" />
         <!-- end-theme-color -->
-        <script src="assets/jquery.min.js"></script> 
-        <script src="assets/skel.min.js"></script>
-        <script src="assets/util.js"></script>
-        <script src="assets/respond.min.js"></script>
-        <script src="assets/responsive.js"></script>
-        <link rel="stylesheet" href="assets/main.css" />
+	<script src="{{url_for('static',filename='assets/jquery.min.js')}}"></script> 
+	<script src="{{url_for('static',filename='assets/skel.min.js')}}"></script>
+	<script src="{{url_for('static',filename='assets/util.js')}}"></script>
+	<script src="{{url_for('static',filename='assets/respond.min.js')}}"></script>
+	<script src="{{url_for('static',filename='assets/responsive.js')}}"></script>
+	<link rel="stylesheet" href="{{url_for('static',filename='assets/main.css')}}" />
         <title>PWA Fire Codelab Demo</title>
         <meta charset="utf-8">
             
@@ -56,9 +56,9 @@
                         
 <article id="home" class="panel special" style="display: flex;">
                             
-   <div class="image" style="background-image: url(&quot;images/mayeedwingdg.jpg&quot;); background-position: center center;">
+	<div class="image" style="background-image: url(&quot;{{url_for('static',filename='a1.jpg')}}&quot;); background-position: center center;">
     
-    <img src="images/a1.jpg" alt="" data-position="center center" 
+		<img src="{{url_for('static',filename='a1.jpg')}}" alt="" data-position="center center" 
                                 
    style="display: none;">
                             
@@ -112,8 +112,8 @@
     
     <article id="work" class="panel secondary inactive" style="display: none;">
            
-        <div class="image" style="background-image: url(&quot;images/pic04.jpg&quot;);background-position: center center;">
-        <img src="images/a2.jpeg" alt="" data-position="center center" style="display: none;">
+	    <div class="image" style="background-image: url(&quot;{{url_for('static',filename='a2.jpeg')}}&quot;);background-position: center center;">
+		    <img src="{{url_for('static',filename='a2.jpeg')}}" alt="" data-position="center center" style="display: none;">
         </div> 
         <div class="content">
         <ul class="actions spinX"><li>
@@ -154,8 +154,8 @@
                         
         <article id="about" class="panel secondary inactive" style="display: none;">
                             
-        <div class="image" style="background-image: url(&quot;images/mayeedwingdg3.jpg&quot;); background-position: center center;">
-        <img src="images/a3.jpeg" alt="" data-position="center center" style="display: none;">
+		<div class="image" style="background-image: url(&quot;{{url_for('static',filename='a3.jpeg')}}&quot;); background-position: center center;">
+			<img src="{{url_for('static',filename='a3.jpeg')}}" alt="" data-position="center center" style="display: none;">
          </div>
     
          <div class="content">
@@ -197,9 +197,9 @@
      
       <article id="contact" class="panel secondary inactive" style="display: none;">
                 
-            <div class="image" style="background-image: url(&quot;images/mayeedwingdg.jpg&quot;); background-position: center bottom;">
+	      <div class="image" style="background-image: url(&quot;{{url_for('static',filename='a4.jpeg')}}&quot;); background-position: center bottom;">
                 
-            <img src="images/a4.jpeg" alt="" data-position="bottom center" style="display: none;">
+		      <img src="{{url_for('static',filename='a4.jpeg')}}" alt="" data-position="bottom center" style="display: none;">
         
             </div><div class="content">
                 
